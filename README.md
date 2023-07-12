@@ -57,4 +57,4 @@ switch(com){
 document.write("<h3>오늘의 점심메뉴는 " + menu + "</h3>");
 document.write("<img src =\"imgs/menu_" + com + ".jpg\">");
 ```
-위 코드를 통해서 랜덤 메뉴를 추천해준다.
+#### 위 코드를 통해서 랜덤 메뉴를 추천해준다.
