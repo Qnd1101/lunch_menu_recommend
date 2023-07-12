@@ -1,15 +1,7 @@
 ## [랜덤 점심 메뉴 추천]
 ![image](https://github.com/Qnd1101/lunch_menu_recommend/assets/107795830/7032f45c-1e73-4d21-a299-9af7d884b51c)
 
-## html 주요 내용 코드 설명
-```html
-<div id = "clock">
-  <div id="today"></div> <!-- 오늘의 날짜를 표시할 요소 -->
-  <div id="time"></div> <!-- 시간을 표시할 요소 -->
-</div>
-```
-
-## JavaScript 주요 내용 코드 설명
+## 시계 출력 코드
 ```javascript
 window.onload = function() {
 const todayDiv = document.getElementById("today");
@@ -42,7 +34,10 @@ setInterval(getTime, 1000);
 ```
 위 코드에서 window.onload를 통해서 실행과 동시에 함수 내용이 출력 되는 형식으로 <br>
 getTime 메서드를 만들어서 시간을 가져와 출력하는 형식으로 만들었다
-<br><br>
+
+<br>
+
+## 랜덤 메뉴 선택 하는 코드
 ```javascript
 document.write("<h1>오늘의 점심메뉴</h1>");
 var com = Math.floor(Math.random() * 5) + 1;
@@ -62,4 +57,4 @@ switch(com){
 document.write("<h3>오늘의 점심메뉴는 " + menu + "</h3>");
 document.write("<img src =\"imgs/menu_" + com + ".jpg\">");
 ```
-위 코드를 통해서 
+위 코드를 통해서 랜덤 메뉴를 추천해준다.
