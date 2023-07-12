@@ -44,4 +44,4 @@ function getTime() {
 getTime();
 setInterval(getTime, 1000);
 ```
-
+getTime 메서드를 만들어서 시간을 가져온다.
