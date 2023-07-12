@@ -37,7 +37,7 @@ setInterval(getTime, 1000);
 
 <br>
 
-## 랜덤 메뉴 선택 하는 코드
+## 랜덤으로 메뉴를 선택 하는 코드
 ```javascript
 document.write("<h1>오늘의 점심메뉴</h1>");
 var com = Math.floor(Math.random() * 5) + 1;
