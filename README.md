@@ -12,11 +12,6 @@
 ## JavaScript 주요 내용 코드 설명
 ```javascript
 window.onload = function() {
-};
-```
-window.onload를 통해서 실행과 동시에 함수 내용이 출력 되는 형식으로 만들었다.
-<br>
-```javascript
 const todayDiv = document.getElementById("today");
 const timeDiv = document.getElementById("time");
 
@@ -43,5 +38,28 @@ function getTime() {
 
 getTime();
 setInterval(getTime, 1000);
+};
 ```
-getTime 메서드를 만들어서 시간을 가져온다.
+위 코드에서 window.onload를 통해서 실행과 동시에 함수 내용이 출력 되는 형식으로 <br>
+getTime 메서드를 만들어서 시간을 가져와 출력하는 형식으로 만들었다
+<br><br>
+```javascript
+document.write("<h1>오늘의 점심메뉴</h1>");
+var com = Math.floor(Math.random() * 5) + 1;
+var menu;
+switch(com){
+  case 1 : menu = "김치찌개";
+    break;
+  case 2 : menu = "스테이크";
+    break;
+  case 3 : menu = "비빔밥";
+    break;
+  case 4 : menu = "짜장면";
+    break;
+  case 5 : menu = "갓잡은 흑돼지 구이";
+    break;
+}
+document.write("<h3>오늘의 점심메뉴는 " + menu + "</h3>");
+document.write("<img src =\"imgs/menu_" + com + ".jpg\">");
+```
+위 코드를 통해서 
